@@ -8,7 +8,7 @@ html {
 :root {
   --text-color1: #1a4122;
   --text-color2: grey;
-  --text-color3: hsl(18, 66%, 45%);
+  --text-color3: #be5427;
   --text-color4: #fff;
   --text-color5: rgb(100, 123, 78);
   --padding1: 4px 1rem;
@@ -142,10 +142,12 @@ a {
     flex-wrap: wrap;
   }
   .carousel-slide .firstlayer .brand {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--text-color5);
     font-family: "Rustica", sans-serif;
     font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   .carousel-slide .firstlayer .remarks {
     font-family: "F37 Caslon", serif;
@@ -161,11 +163,56 @@ a {
     margin: 30px auto 35px;
     font-weight: lighter;
   }
-  .secondlayer {
+
+  .carousel-slide .firstlayer .btn {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    background-color: #be5427;
+    align-items: center;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px 15px;
+    color: var(--text-color4);
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: small;
+  }
+  .carousel-slide .firstlayer .btn > img {
+    filter: brightness(0) invert(1);
+    background: none;
   }
   .secondlayer {
+    width: 100%;
+    height: 100%;
+  }
+  .Works {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12rem;
+    height: 70vh;
+  }
+
+  .testimonial-container {
+    /* width: 85%;
+    height: 100%; */
+    margin: auto;
+    padding: 1.8em 1.2em;
+  }
+  .wrapper button {
+    font-size: 1.8em;
+    padding: var(--padding1);
+    background-color: var(--text-color3);
+    border: none;
+    color: var(--text-color4);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .secondlayer .btns {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .testimonial-container img {
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 12rem;
